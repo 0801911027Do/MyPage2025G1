@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ติดต่อ - Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: 'Sarabun', Arial, sans-serif; margin: 40px; background:#f9f9fb; }
+    .card { max-width: 600px; margin: 0 auto; background:#fff; padding:24px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+    label { display: block; margin-top: 12px; font-weight:600; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 6px; box-sizing: border-box; border:1px solid #ddd; border-radius:6px; }
+    button { margin-top: 18px; padding: 10px 20px; background:#7b2ff7; color:#fff; border:none; border-radius:6px; cursor:pointer; }
+    button:hover { opacity:0.95; }
+  </style>
+</head>
+<body>
+  <div class="card" role="region" aria-labelledby="contact-title">
+    <h1 id="contact-title">ติดต่อเรา</h1>
+    <form action="#" method="post" novalidate>
+      <label for="name">ชื่อ</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">อีเมล</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">ข้อความ</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">ส่งข้อความ</button>
+    </form>
+  </div>
+</body>
+</html>
